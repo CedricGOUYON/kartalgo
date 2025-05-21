@@ -1,9 +1,12 @@
-import "./Home.css";
+import "./home.css";
+
 function Home() {
-	return (
-		<>
-			<h1> Home </h1>
-		</>
-	);
+  return (
+    <div className="home">
+      <h1>🏁 Kart algo!</h1>
+      <button>GO !</button>
+    </div>
+  );
 }
+
 export default Home;
