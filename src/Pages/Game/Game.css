@@ -1,5 +1,5 @@
 .gameContainer {
-  margin-top: 10vh;
+  padding-top: 10vh;
   height: 100vh;
   display: flex;
   flex-direction: row;
