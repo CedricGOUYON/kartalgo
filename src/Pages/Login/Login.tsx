@@ -1,9 +1,14 @@
-import "./Login.css";
+import "./login.css";
+import LoginForm from "../../components/form/LoginForm";
+import RegisterForm from "../../components/form/RegisterForm";
+
 function Login() {
-	return (
-		<>
-			<h1> Login </h1>
-		</>
-	);
+  return (
+    <div className="login-page">
+      <LoginForm />
+      <RegisterForm />
+    </div>
+  );
 }
+
 export default Login;

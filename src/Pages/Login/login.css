@@ -1,0 +1,87 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 100vh;
+  background-image: url("/src/assets/kart-bg-login.png");
+  background-size: cover;
+  background-position: center;
+  font-family: "Press Start 2P", cursive;
+
+  .form-container {
+    width: 40%;
+    max-width: 400px;
+    background: white;
+    padding: 2rem;
+    border: 5px dashed #333;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: #cc0000;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        font-weight: bold;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        color: #444;
+      }
+
+      input {
+        padding: 0.75rem;
+        border-radius: 10px;
+        border: 2px solid #888;
+        font-size: 1rem;
+
+        &:focus {
+          border-color: #ff6600;
+          outline: none;
+        }
+      }
+
+      button {
+        margin-top: 2rem;
+        padding: 1rem;
+        background: #ff6600;
+        color: white;
+        border: none;
+        border-radius: 12px;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 1rem;
+        box-shadow: 0 4px #cc3300;
+
+        &:hover {
+          background: #e65500;
+        }
+
+        &:active {
+          transform: translateY(2px);
+          box-shadow: 0 2px #cc3300;
+        }
+      }
+    }
+  }
+
+  .login-form {
+    background: #f0f0f0cc;
+  }
+
+  .register-form {
+    background: #fff8dccc;
+  }
+}
