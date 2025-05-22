@@ -1,36 +1,64 @@
 .questions {
   width: 350px;
-  padding: 20px;
-  height: 90%;
-  padding: 60px 20px;
-  background-color: gray;
-  border-radius: 6%;
+  padding: 2,25rem;
+  height: 80vh;
+  padding: 2,25rem;
+  background-color: rgb(102, 99, 99);
+  border-radius: 4%;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   ul {
-    button {
-      margin: 30px;
-      background-color: black;
-      color: white;
+    padding:0;}
+
+  button {
+      border: none;
+      height: 50px;
+      width: 100%;
+      margin: 1rem 0;
+      border-radius: 30px;
+      background: linear-gradient(45deg, var(--color-primary-red), var(--color-primary-yellow));
+      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     }
+
+    h2 {
+      height:100px;
+      color: white;
+      font-size: 25px;
+      font-weight: normal;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 30px;
+      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+      background: linear-gradient(45deg, var(--color-primary-red), var(--color-primary-yellow));
+    }
+    
   }
+  .question-container {
+
+    button {
+    font-size: 20px;
+  }
+}
+
   h2,
   ul,
   article,
   button {
-    background-color: rgb(171, 167, 167);
-    color: black;
-    font-size: 26px;
+    color:white;
     text-align: center;
   }
 
-  .timer {
-    height: 90px;
-    padding: 30px;
-    border: 2px, solid, black;
-    border-radius: 3px;
+  .score, .timer {
+    height: 50px;
+    margin: 30px 0;
+    background-color:var(--color-primary-red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;;
   }
-  .score {
-    border: 2px, solid, black;
-  }
-}
+
