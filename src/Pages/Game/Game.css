@@ -1,0 +1,12 @@
+.gameContainer {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.questions {
+  max-width: 30%;
+  padding: 4px;
+  border: 2px, solid, yellow;
+  background-color: gray;
+}
