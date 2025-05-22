@@ -6,6 +6,7 @@ import { useGame } from "../../Context/GameContext";
 const allScore = JSON.parse(localStorage.getItem("allScore") || "[]");
 
 function Questions() {
+
 	const [isPop, setIsPop] = useState(false);
 	const [isChrono, setIsChrono] = useState(true);
 	const [chrono, setChrono] = useState(0); // en secondes
@@ -114,5 +115,6 @@ function Questions() {
 			) : null}
 		</>
 	);
+
 }
 export default Questions;
