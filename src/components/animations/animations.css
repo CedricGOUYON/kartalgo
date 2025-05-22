@@ -2,8 +2,10 @@
   background: url("./src/assets/circuit.png");
   background-size: cover;
 
+
   height: 38vw;
   width: 38vw;
+
 }
 .kart {
   height: 6%;

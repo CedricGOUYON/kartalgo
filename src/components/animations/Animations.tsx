@@ -75,9 +75,11 @@ function Animations() {
 	}, [score]);
 
 	return (
-		<div className="animation">
-			<img style={posKart} className="kart" src={kart} alt="petit kart" />
-		</div>
+		<>
+			<div className="animation">
+				<img style={posKart} className="kart" src={kart} alt="petit kart" />
+			</div>
+		</>
 	);
 }
 export default Animations;
