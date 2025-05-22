@@ -1,29 +1,34 @@
 import "./Questions.css";
-import { useState } from "react";
 
-const dataBase = [
-	{
-		id: 1,
-		question: "What is the capital of France?",
-		options: ["Marseille", "Nantes", "Grenoble", "Paris"],
-		answer: "Paris",
-	},
-];
+import { useGame } from "../../Context/GameContext";
 
 function Questions() {
-	const [currentQuestion, setCurrentQuestion] = useState(dataBase[0]);
+  const { currentQuestion, setCurrentQuestion, allQuestions, score, setScore } = useGame();
 
-	return (
-		<div className="question-container">
-			<h2>{currentQuestion.question}</h2>
-			<ul>
-				{currentQuestion.options.map((option) => (
-					<button type="button" key={option}>
-						{option}
-					</button>
-				))}
-			</ul>
-		</div>
-	);
+  function handleClick(option: string, id: number) {
+    if (option === currentQuestion.answer) {
+      setCurrentQuestion(allQuestions[id++]);
+      const newScore = score + 1;
+      setScore(newScore);
+    }
+  }
+
+  return (
+    <div className="question-container">
+      <h2>{currentQuestion.question}</h2>
+
+      <ul>
+        {currentQuestion.options.map((option) => (
+          <button onClick={() => handleClick(option, currentQuestion.id)} type="button" key={option}>
+            {option}
+          </button>
+        ))}
+      </ul>
+      <section>
+        <article>{score}</article>
+        <article>Timer</article>
+      </section>
+    </div>
+  );
 }
 export default Questions;
