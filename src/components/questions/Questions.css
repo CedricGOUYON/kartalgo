@@ -1,4 +1,36 @@
-* {
-  background-color: #00a800;
-  color: white;
+.questions {
+  width: 350px;
+  padding: 20px;
+  height: 90%;
+  padding: 60px 20px;
+  background-color: gray;
+  border-radius: 6%;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+  ul {
+    button {
+      margin: 30px;
+      background-color: black;
+      color: white;
+    }
+  }
+  h2,
+  ul,
+  article,
+  button {
+    background-color: rgb(171, 167, 167);
+    color: black;
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .timer {
+    height: 90px;
+    padding: 30px;
+    border: 2px, solid, black;
+    border-radius: 3px;
+  }
+  .score {
+    border: 2px, solid, black;
+  }
 }

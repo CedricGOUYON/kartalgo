@@ -1,9 +1,10 @@
 * {
+  color: white;
   box-sizing: border-box;
 }
 body {
   margin: 0;
-  background-color: blueviolet;
+  background-color: #00a800;
 }
 :root {
   --color-primary-red: #ff0000;
