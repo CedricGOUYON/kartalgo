@@ -1,16 +1,10 @@
 .animation {
   background: url("./src/assets/circuit.png");
   background-size: cover;
-  /* z-index: 0; */
-  width: 850px;
-  height: 850px;
-  /* position: relative; */
+  height: 50vw;
+  width: 50vw;
 }
 .kart {
-  /* position: relative; */
-  /* top: 55%;
-  left: 88%;
-  rotate: 90deg; */
-  height: 50px;
-  width: 60px;
+  height: 6%;
+  width: 6%;
 }
