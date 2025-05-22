@@ -1,8 +1,13 @@
 import "./NotFound.css";
+
 function NotFound() {
   return (
     <>
-      <h1>404</h1>
+     <div className="notfound-container">
+      <h1 className="notfound-title">404</h1>
+      <p className="notfound-message">Oups ! Cette page est introuvable.</p>
+      <a href="/" className="notfound-button">Retour à l'accueil</a>
+    </div>
     </>
   );
 }
