@@ -4,13 +4,13 @@ const dataBase = [
 	{
 		id: 1,
 		question: "Que retourne typeof null en JavaScript ?",
-		options: ["object", "null", "undefined", "boolean"],
+		options: ["null", "undefined", "object", "boolean"],
 		answer: "object",
 	},
 	{
 		id: 2,
 		question: "Quelle méthode permet de transformer une chaîne en majuscules ?",
-		options: ["toUpperCase()", "upper()", "toCaps()", "majuscule()"],
+		options: ["upper()", "toCaps()", "majuscule()", "toUpperCase()"],
 		answer: "toUpperCase()",
 	},
 	{
@@ -27,13 +27,13 @@ const dataBase = [
 	{
 		id: 4,
 		question: "Comment déclare-t-on une constante ?",
-		options: ["const x = 5", "let x = 5", "var x = 5", "x := 5"],
+		options: ["let x = 5", "const x = 5", "var x = 5", "x := 5"],
 		answer: "const x = 5",
 	},
 	{
 		id: 5,
 		question: "Quel est le résultat de 3 === '3' ?",
-		options: ["false", "true", "undefined", "null"],
+		options: ["true", "undefined", "false", "null"],
 		answer: "false",
 	},
 	{
@@ -46,8 +46,8 @@ const dataBase = [
 		id: 7,
 		question: "Que fait console.log ?",
 		options: [
-			"Affiche dans la console",
 			"Crée une variable",
+			"Affiche dans la console",
 			"Lance une alerte",
 			"Crée une fonction",
 		],
@@ -63,10 +63,10 @@ const dataBase = [
 		id: 9,
 		question: "Comment vérifier si une variable est un tableau ?",
 		options: [
-			"Array.isArray()",
 			"typeof",
 			"instanceof ArrayList",
 			"checkArray()",
+			"Array.isArray()",
 		],
 		answer: "Array.isArray()",
 	},
@@ -74,8 +74,8 @@ const dataBase = [
 		id: 10,
 		question: "Que signifie NaN ?",
 		options: [
-			"Not a Number",
 			"No active Name",
+			"Not a Number",
 			"Null and Nothing",
 			"Name and Number",
 		],
@@ -90,7 +90,7 @@ const dataBase = [
 	{
 		id: 12,
 		question: "Que retourne typeof undefined ?",
-		options: ["undefined", "null", "object", "boolean"],
+		options: ["null", "object", "boolean", "undefined"],
 		answer: "undefined",
 	},
 	{
@@ -102,23 +102,23 @@ const dataBase = [
 	{
 		id: 14,
 		question: "Comment créer un objet vide ?",
-		options: ["{}", "[]", "()", "''"],
+		options: ["[]", "{}", "()", "''"],
 		answer: "{}",
 	},
 	{
 		id: 15,
 		question: "Quelle méthode supprime le dernier élément d’un tableau ?",
-		options: ["pop()", "remove()", "cut()", "shift()"],
+		options: ["remove()", "cut()", "pop()", "shift()"],
 		answer: "pop()",
 	},
 	{
 		id: 16,
 		question: "Comment écrire un commentaire sur une ligne ?",
 		options: [
-			"// commentaire",
 			"<!-- commentaire -->",
 			"# commentaire",
 			"-- commentaire",
+			"// commentaire",
 		],
 		answer: "// commentaire",
 	},
@@ -138,13 +138,13 @@ const dataBase = [
 	{
 		id: 19,
 		question: "Quelle valeur retourne une fonction sans return explicite ?",
-		options: ["undefined", "null", "false", "0"],
+		options: ["null", "undefined", "false", "0"],
 		answer: "undefined",
 	},
 	{
 		id: 20,
 		question: "Comment peut-on interrompre une boucle ?",
-		options: ["break", "stop", "exit", "halt"],
+		options: ["stop", "exit", "break", "halt"],
 		answer: "break",
 	},
 	{
@@ -157,7 +157,7 @@ const dataBase = [
 	{
 		id: 22,
 		question: "Quel mot-clé permet de déclarer une variable constante ?",
-		options: ["const", "let", "var", "static"],
+		options: ["let", "var", "static", "const"],
 		answer: "const",
 	},
 	{
@@ -169,13 +169,13 @@ const dataBase = [
 	{
 		id: 24,
 		question: "Quelle méthode vérifie si un tableau contient une valeur ?",
-		options: ["includes()", "has()", "contains()", "search()"],
+		options: ["has()", "contains()", "includes()", "search()"],
 		answer: "includes()",
 	},
 	{
 		id: 25,
 		question: "Comment arrondir un nombre vers le bas ?",
-		options: ["Math.floor()", "Math.ceil()", "Math.round()", "Math.down()"],
+		options: ["Math.ceil()", "Math.floor()", "Math.round()", "Math.down()"],
 		answer: "Math.floor()",
 	},
 	{
@@ -188,13 +188,13 @@ const dataBase = [
 	{
 		id: 27,
 		question: "Quelle fonction permet de convertir un nombre en chaîne ?",
-		options: ["toString()", "parseInt()", "Stringify()", "toChar()"],
+		options: ["parseInt()", "Stringify()", "toChar()", "toString()"],
 		answer: "toString()",
 	},
 	{
 		id: 28,
 		question: "Quel mot-clé permet de gérer les erreurs ?",
-		options: ["try", "catch", "error", "handle"],
+		options: ["catch", "error", "try", "handle"],
 		answer: "try",
 	},
 	{
@@ -207,7 +207,7 @@ const dataBase = [
 	{
 		id: 30,
 		question: "Comment vérifier si deux valeurs sont strictement égales ?",
-		options: ["===", "==", "=", "!=="],
+		options: ["==", "===", "=", "!=="],
 		answer: "===",
 	},
 	{
@@ -226,7 +226,7 @@ const dataBase = [
 		id: 33,
 		question:
 			"Quelle boucle est idéale quand on connaît le nombre d’itérations ?",
-		options: ["for", "while", "do while", "foreach"],
+		options: ["while", "do while", "for", "foreach"],
 		answer: "for",
 	},
 	{
@@ -239,8 +239,8 @@ const dataBase = [
 		id: 35,
 		question: "Quelle méthode convertit une chaîne JSON en objet JavaScript ?",
 		options: [
-			"JSON.parse()",
 			"JSON.stringify()",
+			"JSON.parse()",
 			"JSON.convert()",
 			"JSON.decode()",
 		],
@@ -249,13 +249,13 @@ const dataBase = [
 	{
 		id: 36,
 		question: "Comment créer un tableau vide ?",
-		options: ["[]", "{}", "()", "''"],
+		options: ["{}", "()", "[]", "''"],
 		answer: "[]",
 	},
 	{
 		id: 37,
 		question: "Quelle est la valeur initiale d’une variable non définie ?",
-		options: ["undefined", "null", "0", "false"],
+		options: ["null", "undefined", "0", "false"],
 		answer: "undefined",
 	},
 	{
@@ -267,7 +267,7 @@ const dataBase = [
 	{
 		id: 39,
 		question: "Quelle méthode enlève le dernier élément d’un tableau ?",
-		options: ["pop()", "remove()", "shift()", "delete()"],
+		options: ["remove()", "pop()", "shift()", "delete()"],
 		answer: "pop()",
 	},
 	{
@@ -279,14 +279,14 @@ const dataBase = [
 	{
 		id: 41,
 		question: "Quelle méthode ajoute un élément à la fin d’un tableau ?",
-		options: ["push()", "append()", "add()", "insert()"],
+		options: ["append()", "add()", "insert()", "push()"],
 		answer: "push()",
 	},
 	{
 		id: 42,
 		question:
 			"Comment vérifier si deux valeurs sont égales en type et en valeur ?",
-		options: ["===", "==", "!=", "="],
+		options: ["==", "!=", "=", "==="],
 		answer: "===",
 	},
 	{
@@ -298,7 +298,7 @@ const dataBase = [
 	{
 		id: 44,
 		question: "Quel type retourne la méthode Array.isArray([1,2,3]) ?",
-		options: ["true", "false", "array", "object"],
+		options: ["false", "true", "array", "object"],
 		answer: "true",
 	},
 	{
@@ -310,7 +310,7 @@ const dataBase = [
 	{
 		id: 46,
 		question: "Comment accéder au 3ème élément d’un tableau 'arr' ?",
-		options: ["arr[2]", "arr(2)", "arr{2}", "arr<2>"],
+		options: ["arr(2)", "arr{2}", "arr<2>", "arr[2]"],
 		answer: "arr[2]",
 	},
 	{
@@ -327,13 +327,13 @@ const dataBase = [
 	{
 		id: 48,
 		question: "Que renvoie 'typeof NaN' ?",
-		options: ["number", "NaN", "undefined", "object"],
+		options: ["NaN", "undefined", "number", "object"],
 		answer: "number",
 	},
 	{
 		id: 49,
 		question: "Quelle méthode enlève le premier élément d’un tableau ?",
-		options: ["shift()", "pop()", "slice()", "remove()"],
+		options: ["pop()", "slice()", "shift()", "remove()"],
 		answer: "shift()",
 	},
 	{
