@@ -1,0 +1,42 @@
+.podium {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Press Start 2P", cursive;
+
+  background-image: url("/src/assets/kart-podium.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.classement-box {
+  width: 40%;
+  max-width: 400px;
+  background: #fff8dccc;
+  padding: 2rem;
+  border: 5px dashed #333;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+
+  h2 {
+    color: black;
+    margin-bottom: 40px;
+  }
+}
+
+.classement-item {
+  background: #ffffffcc;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 0.75rem;
+  color: #000; /* ⬅️ Texte bien noir */
+  font-size: 1.2rem;
+}

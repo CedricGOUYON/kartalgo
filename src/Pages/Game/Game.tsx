@@ -10,7 +10,7 @@ function Game() {
         <div className="questions">
           <Questions />
           <Link to="/">
-            <button className="go-button">Acceuil</button>
+            <button className="go-button">Accueil</button>
           </Link>
         </div>
         <div>
