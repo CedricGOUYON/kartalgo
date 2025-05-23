@@ -8,7 +8,7 @@ function Login() {
     <div className="login-page">
       <LoginForm />
       <Link to="/">
-        <button className="go-button">Acceuil</button>
+        <button className="go-button">Accueil</button>
       </Link>
       <RegisterForm />
     </div>
