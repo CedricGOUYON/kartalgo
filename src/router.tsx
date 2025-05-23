@@ -5,6 +5,7 @@ import Login from "./Pages/Login/Login";
 import Game from "./Pages/Game/Game";
 import NotFound from "./Pages/NotFound/NotFound";
 import Classement from "./Pages/Classement/Classement";
+import About from "./Pages/About/About";
 
 const router = createBrowserRouter([
 	{
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
 			{ path: "game", element: <Game /> },
 			{ path: "*", element: <NotFound /> },
 			{ path: "classement", element: <Classement /> },
+			{ path: "about", element: <About /> },
 		],
 	},
 ]);
